@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Akhter Hussain – Frontend Developer & BCA Student. Portfolio showcasing responsive web development, HTML5, CSS3, and modern UI engineering." />
+  <meta name="author" content="Akhter Hussain" />
+  <meta name="theme-color" content="#0a1628" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Akhter Hussain | Frontend Developer" />
+  <meta property="og:description" content="Passionate frontend developer focused on building responsive and modern web experiences." />
+  <meta property="og:type" content="website" />
+
+  <title>Akhter Hussain | Frontend Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===================== HEADER / NAVIGATION ===================== -->
+  <header class="header" role="banner">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a href="#home" class="nav__logo" aria-label="Akhter Hussain – Home">
+        <span class="nav__logo-bracket">&lt;</span>AH<span class="nav__logo-bracket">/&gt;</span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu" role="list">
+        <li><a href="#home"         class="nav__link" aria-current="page">Home</a></li>
+        <li><a href="#about"        class="nav__link">About</a></li>
+        <li><a href="#skills"       class="nav__link">Skills</a></li>
+        <li><a href="#services"     class="nav__link">Services</a></li>
+        <li><a href="#projects"     class="nav__link">Projects</a></li>
+        <li><a href="#contact"      class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main id="main-content">
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="hero__grid-overlay" aria-hidden="true"></div>
+
+      <div class="container hero__container">
+        <div class="hero__content">
+          <p class="hero__eyebrow">
+            <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+            Available for Internship &amp; Freelance
+          </p>
+
+          <h1 class="hero__heading" id="hero-heading">
+            Hi, I'm <span class="hero__name">Akhter</span><br />
+            <span class="hero__role">Frontend Developer</span>
+          </h1>
+
+          <p class="hero__tagline">
+            Passionate frontend developer focused on building responsive and modern web experiences using semantic HTML5 and clean CSS3 architecture.
+          </p>
+
+          <div class="hero__cta-group">
+            <a href="#projects" class="button button--primary">View Projects</a>
+            <a href="#contact"  class="button button--outline">Get In Touch</a>
+          </div>
+
+          <div class="hero__stats" aria-label="Quick stats">
+            <div class="hero__stat">
+              <span class="hero__stat-number">2+</span>
+              <span class="hero__stat-label">Projects Built</span>
+            </div>
+            <div class="hero__stat-divider" aria-hidden="true"></div>
+            <div class="hero__stat">
+              <span class="hero__stat-number">3</span>
+              <span class="hero__stat-label">Certifications</span>
+            </div>
+            <div class="hero__stat-divider" aria-hidden="true"></div>
+            <div class="hero__stat">
+              <span class="hero__stat-number">BCA</span>
+              <span class="hero__stat-label">Student</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero__visual" aria-label="Developer profile illustration">
+          <div class="hero__avatar-wrapper">
+            <div class="hero__avatar-ring" aria-hidden="true"></div>
+            <div class="hero__avatar-ring hero__avatar-ring--2" aria-hidden="true"></div>
+            <div class="hero__avatar" aria-label="Akhter Hussain profile">
+              <span class="hero__avatar-initials" aria-hidden="true">AH</span>
+            </div>
+            <div class="hero__badge hero__badge--html" aria-label="HTML5 skill badge">HTML5</div>
+            <div class="hero__badge hero__badge--css"  aria-label="CSS3 skill badge">CSS3</div>
+            <div class="hero__badge hero__badge--rwd"  aria-label="Responsive Web Design badge">RWD</div>
+          </div>
+
+          <div class="hero__code-snippet" aria-label="Code snippet decoration">
+            <p class="hero__code-line"><span class="code-tag">&lt;developer&gt;</span></p>
+            <p class="hero__code-line code-indent"><span class="code-attr">name:</span> <span class="code-val">"Akhter Hussain"</span></p>
+            <p class="hero__code-line code-indent"><span class="code-attr">role:</span> <span class="code-val">"Frontend Dev"</span></p>
+            <p class="hero__code-line code-indent"><span class="code-attr">focus:</span> <span class="code-val">"Clean Code"</span></p>
+            <p class="hero__code-line"><span class="code-tag">&lt;/developer&gt;</span></p>
+          </div>
+        </aside>
+      </div>
+
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <span class="hero__scroll-line"></span>
+        <span class="hero__scroll-text">scroll</span>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__eyebrow">Who I Am</p>
+          <h2 class="section__title" id="about-heading">About Me</h2>
+          <p class="section__subtitle">A BCA student building real-world frontend skills, one semantic tag at a time.</p>
+        </header>
+
+        <div class="about__grid">
+          <div class="about__image-col">
+            <div class="about__image-wrapper">
+              <div class="about__image-frame" aria-hidden="true">
+                <div class="about__avatar-large">
+                  <span class="about__avatar-initials">AH</span>
+                </div>
+              </div>
+              <div class="about__tag about__tag--1" aria-hidden="true">
+                <span class="about__tag-icon">🎓</span> BCA Student
+              </div>
+              <div class="about__tag about__tag--2" aria-hidden="true">
+                <span class="about__tag-icon">💻</span> Frontend Dev
+              </div>
+            </div>
+          </div>
+
+          <div class="about__content-col">
+            <p class="about__intro">
+              I am a <strong>BCA student</strong> and aspiring frontend developer passionate about creating clean, responsive, and accessible websites using HTML and CSS.
+            </p>
+            <p class="about__body">
+              My journey into frontend development began with a curiosity about how great websites are built. I've since immersed myself in learning semantic HTML5, modern CSS architecture, responsive design systems, and accessibility standards — skills that form the foundation of a production-quality web experience.
+            </p>
+            <p class="about__body">
+              I believe that clean code, proper information architecture, and accessibility are not optional — they are engineering fundamentals. Every project I build reflects those principles.
+            </p>
+
+            <ul class="about__facts" role="list" aria-label="Personal facts">
+              <li class="about__fact">
+                <span class="about__fact-label">Degree</span>
+                <span class="about__fact-value">Bachelor of Computer Applications (BCA)</span>
+              </li>
+              <li class="about__fact">
+                <span class="about__fact-label">Focus</span>
+                <span class="about__fact-value">Frontend Engineering &amp; UI Development</span>
+              </li>
+              <li class="about__fact">
+                <span class="about__fact-label">Email</span>
+                <span class="about__fact-value">
+                  <a href="mailto:akhtarwani666@gmail.com" class="about__link">akhtarwani666@gmail.com</a>
+                </span>
+              </li>
+              <li class="about__fact">
+                <span class="about__fact-label">Status</span>
+                <span class="about__fact-value about__fact-value--available">Open to Internship Opportunities</span>
+              </li>
+            </ul>
+
+            <a href="#contact" class="button button--primary">Let's Work Together</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="skills section section--alt" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__eyebrow">Technical Arsenal</p>
+          <h2 class="section__title" id="skills-heading">Skills &amp; Tools</h2>
+          <p class="section__subtitle">Core competencies I've built through hands-on learning and real project development.</p>
+        </header>
+
+        <div class="skills__categories">
+
+          <!-- Frontend Skills -->
+          <div class="skills__category">
+            <h3 class="skills__category-title">
+              <span class="skills__category-icon" aria-hidden="true">⟨/⟩</span>
+              Frontend Development
+            </h3>
+            <ul class="skills__grid" role="list">
+              <li class="card skill-card">
+                <div class="skill-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true" focusable="false">
+                    <polygon points="4,4 36,4 33,34 20,38 7,34" fill="#e44d26" opacity="0.15"/>
+                    <polygon points="4,4 36,4 33,34 20,38 7,34" fill="none" stroke="#e44d26" stroke-width="1.5"/>
+                    <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="10" fill="#e44d26" font-weight="700">5</text>
+                  </svg>
+                </div>
+                <h4 class="skill-card__name">HTML5</h4>
+                <p class="skill-card__desc">Semantic markup, accessibility, document structure</p>
+                <div class="skill-card__bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 proficiency 85%">
+                  <div class="skill-card__bar-fill" style="--skill-pct: 85%"></div>
+                </div>
+              </li>
+
+              <li class="card skill-card">
+                <div class="skill-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true" focusable="false">
+                    <polygon points="4,4 36,4 33,34 20,38 7,34" fill="#264de4" opacity="0.15"/>
+                    <polygon points="4,4 36,4 33,34 20,38 7,34" fill="none" stroke="#264de4" stroke-width="1.5"/>
+                    <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="10" fill="#264de4" font-weight="700">3</text>
+                  </svg>
+                </div>
+                <h4 class="skill-card__name">CSS3</h4>
+                <p class="skill-card__desc">Grid, Flexbox, animations, custom properties</p>
+                <div class="skill-card__bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 proficiency 82%">
+                  <div class="skill-card__bar-fill" style="--skill-pct: 82%"></div>
+                </div>
+              </li>
+
+              <li class="card skill-card">
+                <div class="skill-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true" focusable="false">
+                    <rect x="4" y="4" width="32" height="32" rx="4" fill="#ff6b35" opacity="0.15"/>
+                    <rect x="4" y="4" width="32" height="32" rx="4" fill="none" stroke="#ff6b35" stroke-width="1.5"/>
+                    <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="7" fill="#ff6b35" font-weight="700">RWD</text>
+                  </svg>
+                </div>
+                <h4 class="skill-card__name">Responsive Design</h4>
+                <p class="skill-card__desc">Mobile-first layouts, media queries, fluid grids</p>
+                <div class="skill-card__bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Responsive Design proficiency 80%">
+                  <div class="skill-card__bar-fill" style="--skill-pct: 80%"></div>
+                </div>
+              </li>
+
+              <li class="card skill-card">
+                <div class="skill-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true" focusable="false">
+                    <rect x="4" y="4" width="32" height="32" rx="2" fill="#1565c0" opacity="0.12"/>
+                    <rect x="4" y="4" width="32" height="32" rx="2" fill="none" stroke="#1565c0" stroke-width="1.5"/>
+                    <line x1="4" y1="17" x2="36" y2="17" stroke="#1565c0" stroke-width="1" opacity="0.6"/>
+                    <line x1="4" y1="27" x2="36" y2="27" stroke="#1565c0" stroke-width="1" opacity="0.6"/>
+                    <line x1="19" y1="4" x2="19" y2="36" stroke="#1565c0" stroke-width="1" opacity="0.6"/>
+                  </svg>
+                </div>
+                <h4 class="skill-card__name">CSS Grid</h4>
+                <p class="skill-card__desc">Two-dimensional macro layout systems</p>
+                <div class="skill-card__bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="CSS Grid proficiency 78%">
+                  <div class="skill-card__bar-fill" style="--skill-pct: 78%"></div>
+                </div>
+              </li>
+
+              <li class="card skill-card">
+                <div class="skill-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true" focusable="false">
+                    <rect x="4" y="14" width="32" height="12" rx="6" fill="#1565c0" opacity="0.12"/>
+                    <rect x="4" y="14" width="32" height="12" rx="6" fill="none" stroke="#1565c0" stroke-width="1.5"/>
+                    <circle cx="14" cy="20" r="3" fill="#1565c0" opacity="0.6"/>
+                    <circle cx="26" cy="20" r="3" fill="#1565c0" opacity="0.6"/>
+                  </svg>
+                </div>
+                <h4 class="skill-card__name">Flexbox</h4>
+                <p class="skill-card__desc">One-dimensional component alignment</p>
+                <div class="skill-card__bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Flexbox proficiency 82%">
+                  <div class="skill-card__bar-fill" style="--skill-pct: 82%"></div>
+                </div>
+              </li>
+
+              <li class="card skill-card">
+                <div class="skill-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true" focusable="false">
+                    <circle cx="20" cy="20" r="14" fill="#43a047" opacity="0.12"/>
+                    <circle cx="20" cy="20" r="14" fill="none" stroke="#43a047" stroke-width="1.5"/>
+                    <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="8" fill="#43a047" font-weight="700">A11Y</text>
+                  </svg>
+                </div>
+                <h4 class="skill-card__name">Accessibility (A11Y)</h4>
+                <p class="skill-card__desc">WCAG standards, semantic roles, ARIA</p>
+                <div class="skill-card__bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Accessibility proficiency 75%">
+                  <div class="skill-card__bar-fill" style="--skill-pct: 75%"></div>
+                </div>
+              </li>
+
+              <li class="card skill-card">
+                <div class="skill-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true" focusable="false">
+                    <rect x="6" y="6" width="28" height="28" rx="3" fill="#ab47bc" opacity="0.12"/>
+                    <rect x="6" y="6" width="28" height="28" rx="3" fill="none" stroke="#ab47bc" stroke-width="1.5"/>
+                    <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="7" fill="#ab47bc" font-weight="700">UI/UX</text>
+                  </svg>
+                </div>
+                <h4 class="skill-card__name">UI/UX Basics</h4>
+                <p class="skill-card__desc">Visual hierarchy, spacing, design principles</p>
+                <div class="skill-card__bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" aria-label="UI/UX proficiency 72%">
+                  <div class="skill-card__bar-fill" style="--skill-pct: 72%"></div>
+                </div>
+              </li>
+
+              <li class="card skill-card">
+                <div class="skill-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true" focusable="false">
+                    <rect x="6" y="8" width="28" height="22" rx="2" fill="#0288d1" opacity="0.12"/>
+                    <rect x="6" y="8" width="28" height="22" rx="2" fill="none" stroke="#0288d1" stroke-width="1.5"/>
+                    <line x1="12" y1="32" x2="28" y2="32" stroke="#0288d1" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="20" y1="30" x2="20" y2="32" stroke="#0288d1" stroke-width="2"/>
+                  </svg>
+                </div>
+                <h4 class="skill-card__name">Frontend Architecture</h4>
+                <p class="skill-card__desc">BEM, DRY principles, modular CSS</p>
+                <div class="skill-card__bar" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" aria-label="Frontend Architecture proficiency 74%">
+                  <div class="skill-card__bar-fill" style="--skill-pct: 74%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Office / Productivity Skills -->
+          <div class="skills__category">
+            <h3 class="skills__category-title">
+              <span class="skills__category-icon" aria-hidden="true">◈</span>
+              Productivity Tools
+            </h3>
+            <ul class="skills__tools-grid" role="list">
+              <li class="card tool-card">
+                <span class="tool-card__icon" aria-hidden="true">📊</span>
+                <span class="tool-card__name">Spreadsheets</span>
+              </li>
+              <li class="card tool-card">
+                <span class="tool-card__icon" aria-hidden="true">📑</span>
+                <span class="tool-card__name">PowerPoint</span>
+              </li>
+              <li class="card tool-card">
+                <span class="tool-card__icon" aria-hidden="true">📝</span>
+                <span class="tool-card__name">MS Word</span>
+              </li>
+              <li class="card tool-card">
+                <span class="tool-card__icon" aria-hidden="true">🤖</span>
+                <span class="tool-card__name">Generative AI</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Certificates -->
+        <div class="certs" aria-labelledby="certs-heading">
+          <h3 class="certs__heading" id="certs-heading">Certifications</h3>
+          <ul class="certs__list" role="list">
+            <li class="cert-card">
+              <span class="cert-card__badge" aria-hidden="true">🏅</span>
+              <div class="cert-card__info">
+                <h4 class="cert-card__title">Generative AI</h4>
+                <p class="cert-card__issuer">LinkedIn Learning &amp; Microsoft</p>
+              </div>
+            </li>
+            <li class="cert-card">
+              <span class="cert-card__badge" aria-hidden="true">🏅</span>
+              <div class="cert-card__info">
+                <h4 class="cert-card__title">EXIN BCS Artificial Intelligence Essentials</h4>
+                <p class="cert-card__issuer">EXIN / BCS</p>
+              </div>
+            </li>
+            <li class="cert-card">
+              <span class="cert-card__badge" aria-hidden="true">🏅</span>
+              <div class="cert-card__info">
+                <h4 class="cert-card__title">Diploma in Computer Applications (DCA)</h4>
+                <p class="cert-card__issuer">Recognised Institute</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section class="services section" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__eyebrow">What I Offer</p>
+          <h2 class="section__title" id="services-heading">Services</h2>
+          <p class="section__subtitle">Delivering clean, structured, and accessible frontend solutions.</p>
+        </header>
+
+        <ul class="services__grid" role="list">
+          <li class="card service-card">
+            <div class="service-card__icon-wrap" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                <rect x="2" y="4" width="28" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <line x1="10" y1="28" x2="22" y2="28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="16" y1="24" x2="16" y2="28" stroke="currentColor" stroke-width="2"/>
+                <line x1="6" y1="9" x2="14" y2="9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="6" y1="13" x2="18" y2="13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Web Design</h3>
+            <p class="service-card__desc">Crafting visually modern, technically clean website layouts with strong UI/UX foundations.</p>
+            <span class="service-card__tag">UI Design</span>
+          </li>
+
+          <li class="card service-card">
+            <div class="service-card__icon-wrap" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                <polyline points="6,12 2,16 6,20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <polyline points="26,12 30,16 26,20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="19" y1="6" x2="13" y2="26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Frontend Development</h3>
+            <p class="service-card__desc">Building pixel-perfect, semantic, and accessible websites using HTML5 and CSS3 best practices.</p>
+            <span class="service-card__tag">HTML &amp; CSS</span>
+          </li>
+
+          <li class="card service-card">
+            <div class="service-card__icon-wrap" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                <rect x="2" y="6" width="28" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <rect x="8" y="12" width="6" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.2"/>
+                <rect x="18" y="10" width="6" height="10" rx="1" fill="none" stroke="currentColor" stroke-width="1.2"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Responsive Design</h3>
+            <p class="service-card__desc">Engineering mobile-first, fluid layouts that work flawlessly across all screen sizes and devices.</p>
+            <span class="service-card__tag">Mobile-First</span>
+          </li>
+
+          <li class="card service-card">
+            <div class="service-card__icon-wrap" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                <rect x="4" y="4" width="24" height="24" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <line x1="4" y1="12" x2="28" y2="12" stroke="currentColor" stroke-width="1.2"/>
+                <line x1="14" y1="12" x2="14" y2="28" stroke="currentColor" stroke-width="1.2"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">UI Engineering</h3>
+            <p class="service-card__desc">Applying CSS Grid, Flexbox, and BEM methodology for scalable, maintainable component systems.</p>
+            <span class="service-card__tag">Architecture</span>
+          </li>
+
+          <li class="card service-card">
+            <div class="service-card__icon-wrap" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                <rect x="4" y="8" width="24" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <rect x="10" y="4" width="12" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="1.2"/>
+                <line x1="10" y1="17" x2="22" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="13" y1="21" x2="19" y2="21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Landing Page Design</h3>
+            <p class="service-card__desc">Designing high-impact, conversion-focused landing pages with modern visual hierarchy and CTAs.</p>
+            <span class="service-card__tag">Marketing</span>
+          </li>
+
+          <li class="card service-card">
+            <div class="service-card__icon-wrap" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                <circle cx="16" cy="16" r="12" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="9" fill="currentColor" font-weight="700">A11Y</text>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Accessible Websites</h3>
+            <p class="service-card__desc">Ensuring all web projects meet WCAG standards with proper semantic markup and keyboard navigation.</p>
+            <span class="service-card__tag">WCAG</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== ENGINEERING PRINCIPLES SECTION ===== -->
+    <section class="principles section section--alt" id="principles" aria-labelledby="principles-heading">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__eyebrow">Engineering Blueprint</p>
+          <h2 class="section__title" id="principles-heading">Frontend Engineering Principles</h2>
+          <p class="section__subtitle">The foundational concepts that guide every line of code I write.</p>
+        </header>
+
+        <div class="principles__grid">
+
+          <article class="principle-card" aria-labelledby="principle-dry">
+            <div class="principle-card__number" aria-hidden="true">01</div>
+            <h3 class="principle-card__title" id="principle-dry">DRY Principle</h3>
+            <p class="principle-card__desc">
+              <strong>Don't Repeat Yourself.</strong> Every piece of knowledge must have a single, unambiguous, authoritative representation within the system.
+            </p>
+            <ul class="principle-card__list" role="list">
+              <li>Reusable CSS classes &amp; custom properties</li>
+              <li>Modular, composable styling</li>
+              <li>BEM naming methodology</li>
+            </ul>
+            <div class="principle-card__code" aria-label="Code example">
+              <code>.card { … }  /* reused everywhere */</code>
+              <code>.card__title { … }  /* BEM element */</code>
+              <code>.button--primary { … }  /* modifier */</code>
+            </div>
+          </article>
+
+          <article class="principle-card" aria-labelledby="principle-semantic">
+            <div class="principle-card__number" aria-hidden="true">02</div>
+            <h3 class="principle-card__title" id="principle-semantic">Semantic DOM</h3>
+            <p class="principle-card__desc">
+              <strong>Use the right element for the right job.</strong> Semantic HTML communicates meaning to browsers, search engines, and assistive technologies.
+            </p>
+            <ul class="principle-card__list role="list"">
+              <li><code class="inline-code">&lt;header&gt;</code> — page or section header</li>
+              <li><code class="inline-code">&lt;main&gt;</code> — primary document content</li>
+              <li><code class="inline-code">&lt;section&gt;</code> — thematic grouping</li>
+              <li><code class="inline-code">&lt;article&gt;</code> — self-contained content</li>
+              <li><code class="inline-code">&lt;footer&gt;</code> — closing information</li>
+            </ul>
+          </article>
+
+          <article class="principle-card" aria-labelledby="principle-soc">
+            <div class="principle-card__number" aria-hidden="true">03</div>
+            <h3 class="principle-card__title" id="principle-soc">Separation of Concerns</h3>
+            <p class="principle-card__desc">
+              Each technology layer has a <strong>single, clear responsibility</strong> — keeping codebases maintainable and scalable.
+            </p>
+            <ul class="principle-card__list" role="list">
+              <li><strong>HTML</strong> = Structure &amp; semantics</li>
+              <li><strong>CSS</strong> = Presentation &amp; layout</li>
+              <li>No inline styles. Ever.</li>
+            </ul>
+            <div class="principle-card__code" aria-label="Code example">
+              <code>&lt;!-- HTML: structure only --&gt;</code>
+              <code>&lt;button class="button--primary"&gt;</code>
+              <code>/* CSS: presentation only */</code>
+            </div>
+          </article>
+
+          <article class="principle-card" aria-labelledby="principle-layout">
+            <div class="principle-card__number" aria-hidden="true">04</div>
+            <h3 class="principle-card__title" id="principle-layout">Grid vs Flexbox</h3>
+            <p class="principle-card__desc">
+              <strong>Right tool, right job.</strong> CSS Grid and Flexbox serve different layout dimensions — using both correctly is a mark of engineering maturity.
+            </p>
+            <ul class="principle-card__list" role="list">
+              <li><strong>Grid</strong> → macro page layout (2D)</li>
+              <li><strong>Flexbox</strong> → component alignment (1D)</li>
+              <li>Never substitute one for the other blindly</li>
+            </ul>
+          </article>
+
+          <article class="principle-card" aria-labelledby="principle-ia">
+            <div class="principle-card__number" aria-hidden="true">05</div>
+            <h3 class="principle-card__title" id="principle-ia">Information Architecture</h3>
+            <p class="principle-card__desc">
+              <strong>Structure content for humans first.</strong> A clear sitemap, logical heading hierarchy, and predictable navigation build user trust.
+            </p>
+            <ul class="principle-card__list" role="list">
+              <li>Only one <code class="inline-code">&lt;h1&gt;</code> per page</li>
+              <li>Heading hierarchy: h1 → h2 → h3</li>
+              <li>Anchor navigation for all major sections</li>
+            </ul>
+          </article>
+
+          <article class="principle-card" aria-labelledby="principle-a11y">
+            <div class="principle-card__number" aria-hidden="true">06</div>
+            <h3 class="principle-card__title" id="principle-a11y">Accessibility (A11Y)</h3>
+            <p class="principle-card__desc">
+              <strong>The web is for everyone.</strong> Accessibility is not a feature — it is a fundamental engineering requirement.
+            </p>
+            <ul class="principle-card__list" role="list">
+              <li>Alt text on all meaningful images</li>
+              <li>Min 4.5:1 colour contrast ratio</li>
+              <li>Keyboard-navigable interface</li>
+              <li>Semantic landmark regions</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="projects section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__eyebrow">My Work</p>
+          <h2 class="section__title" id="projects-heading">Featured Projects</h2>
+          <p class="section__subtitle">Real-world projects demonstrating frontend engineering and creative problem-solving.</p>
+        </header>
+
+        <ul class="projects__grid" role="list">
+
+          <li class="card project-card">
+            <div class="project-card__image-wrap">
+<div class="project-card__image" aria-label="News Portal Website project preview">
+                <img src="project images/News portal website.PNG" alt="News portal website project preview" loading="lazy" />
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags" aria-label="Technologies used">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">Java (Frontend)</span>
+              </div>
+              <h3 class="project-card__title">Responsive News Portal</h3>
+              <p class="project-card__desc">
+                A fully responsive news portal website developed with HTML, CSS, and Java frontend. Features structured editorial layout, category navigation, and mobile-first responsive design.
+              </p>
+              <a href="https://github.com/akhterhussain134" target="_blank" rel="noopener noreferrer" class="button button--outline button--sm" aria-label="View News Portal project on GitHub">
+                View on GitHub
+                <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M2 2h10v10M2 12L12 2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+              </a>
+            </div>
+          </li>
+
+          <li class="card project-card">
+            <div class="project-card__image-wrap">
+              <div class="project-card__image project-card__image--hardware" aria-label="Arduino Robotic Car project preview">
+<img src="project images/Arduino Robotic car.jpeg" alt="Arduino Robotic car project preview" loading="lazy" />
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags" aria-label="Technologies used">
+                <span class="tag">Arduino Uno</span>
+                <span class="tag">Ultrasonic Sensor</span>
+                <span class="tag">Embedded C</span>
+              </div>
+              <h3 class="project-card__title">Arduino Robotic Car</h3>
+              <p class="project-card__desc">
+                Designed and built an Arduino Uno robotic car with ultrasonic obstacle detection. The car autonomously detects and avoids obstacles in real time using sensor-driven logic.
+              </p>
+              <a href="https://github.com/akhterhussain134" target="_blank" rel="noopener noreferrer" class="button button--outline button--sm" aria-label="View Arduino Robotic Car project on GitHub">
+                View on GitHub
+                <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M2 2h10v10M2 12L12 2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+              </a>
+            </div>
+          </li>
+
+          <li class="card project-card project-card--coming-soon">
+            <div class="project-card__image-wrap">
+              <div class="project-card__image" aria-label="Upcoming project">
+                <div class="project-card__image-placeholder" aria-hidden="true">
+                  <svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="2" opacity="0.3" stroke-dasharray="4 3"/>
+                    <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="20" fill="currentColor" opacity="0.3">+</text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag tag--muted">Coming Soon</span>
+              </div>
+              <h3 class="project-card__title">Next Project</h3>
+              <p class="project-card__desc">
+                Currently in development. A new frontend project demonstrating advanced CSS architecture and responsive design patterns.
+              </p>
+              <span class="button button--disabled button--sm" aria-disabled="true">In Progress</span>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section class="testimonials section section--alt" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__eyebrow">Kind Words</p>
+          <h2 class="section__title" id="testimonials-heading">Testimonials</h2>
+        </header>
+
+        <ul class="testimonials__grid" role="list">
+
+          <li class="testimonial-card">
+            <div class="testimonial-card__quote-mark" aria-hidden="true">"</div>
+            <blockquote class="testimonial-card__quote">
+              <p>Akhter demonstrates a strong understanding of semantic HTML and CSS layout systems. His attention to code quality and accessibility is impressive for a student at this stage.</p>
+            </blockquote>
+            <footer class="testimonial-card__footer">
+              <div class="testimonial-card__avatar" aria-hidden="true">MR</div>
+              <div>
+                <cite class="testimonial-card__name">Mohammed Rauf</cite>
+                <p class="testimonial-card__role">Senior Web Developer &amp; Mentor</p>
+              </div>
+            </footer>
+          </li>
+
+          <li class="testimonial-card">
+            <div class="testimonial-card__quote-mark" aria-hidden="true">"</div>
+            <blockquote class="testimonial-card__quote">
+              <p>Akhter's projects stand out because of his commitment to clean, structured code. He follows best practices that many developers overlook, and his responsibe designs work beautifully on all devices.</p>
+            </blockquote>
+            <footer class="testimonial-card__footer">
+              <div class="testimonial-card__avatar" aria-hidden="true">SF</div>
+              <div>
+                <cite class="testimonial-card__name">Salma Farooq</cite>
+                <p class="testimonial-card__role">Frontend Lead, Tech Startup</p>
+              </div>
+            </footer>
+          </li>
+
+          <li class="testimonial-card">
+            <div class="testimonial-card__quote-mark" aria-hidden="true">"</div>
+            <blockquote class="testimonial-card__quote">
+              <p>A dedicated and curious learner. Akhter's ability to grasp frontend engineering principles quickly and apply them in real projects shows great potential for his career ahead.</p>
+            </blockquote>
+            <footer class="testimonial-card__footer">
+              <div class="testimonial-card__avatar" aria-hidden="true">AK</div>
+              <div>
+                <cite class="testimonial-card__name">Arjun Kumar</cite>
+                <p class="testimonial-card__role">Computer Science Lecturer, BCA Department</p>
+              </div>
+            </footer>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== INTERNSHIP JOURNEY SECTION ===== -->
+    <section class="journey section" id="journey" aria-labelledby="journey-heading">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__eyebrow">My Path</p>
+          <h2 class="section__title" id="journey-heading">Internship Journey</h2>
+          <p class="section__subtitle">From student to frontend engineer — every step of the learning roadmap.</p>
+        </header>
+
+        <ol class="timeline" role="list" aria-label="Internship journey timeline">
+          <li class="timeline__item">
+            <div class="timeline__marker" aria-hidden="true">01</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">HTML5 Fundamentals</h3>
+              <p class="timeline__desc">Mastered semantic HTML5, document structure, heading hierarchy, landmark elements, and accessibility basics.</p>
+              <span class="timeline__tag">Foundation</span>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__marker" aria-hidden="true">02</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">CSS Architecture &amp; Layout</h3>
+              <p class="timeline__desc">Built deep expertise in CSS Grid, Flexbox, custom properties, BEM methodology, and DRY styling principles.</p>
+              <span class="timeline__tag">Intermediate</span>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__marker" aria-hidden="true">03</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Responsive Web Engineering</h3>
+              <p class="timeline__desc">Applied mobile-first design, fluid typography, adaptive layouts, and tested across all major screen sizes.</p>
+              <span class="timeline__tag">Applied Skills</span>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__marker" aria-hidden="true">04</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Portfolio Project</h3>
+              <p class="timeline__desc">Synthesized all learned principles into this production-quality portfolio — a complete frontend engineering demonstration.</p>
+              <span class="timeline__tag">Milestone</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact section section--alt" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__eyebrow">Get In Touch</p>
+          <h2 class="section__title" id="contact-heading">Contact Me</h2>
+          <p class="section__subtitle">Open to internship opportunities, frontend projects, and collaborations. Let's build something great.</p>
+        </header>
+
+        <div class="contact__grid">
+
+          <div class="contact__info">
+            <h3 class="contact__info-title">Let's Connect</h3>
+            <p class="contact__info-text">Whether you have an internship opportunity, a project idea, or just want to chat about frontend development — my inbox is open.</p>
+
+            <ul class="contact__links" role="list">
+              <li class="contact__link-item">
+                <a href="mailto:akhtarwani666@gmail.com" class="contact__link" aria-label="Send email to Akhter Hussain">
+                  <span class="contact__link-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                      <rect x="2" y="4" width="16" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                      <polyline points="2,4 10,11 18,4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                  </span>
+                  <span>akhtarwani666@gmail.com</span>
+                </a>
+              </li>
+              <li class="contact__link-item">
+                <a href="https://www.linkedin.com/in/akhter-hussain-324491357" target="_blank" rel="noopener noreferrer" class="contact__link" aria-label="Akhter Hussain on LinkedIn (opens in new tab)">
+                  <span class="contact__link-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                      <rect x="2" y="2" width="16" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                      <line x1="6" y1="9" x2="6" y2="15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                      <line x1="6" y1="6" x2="6" y2="7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M10 9v6M10 12c0-2 5-2 5 0v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+                    </svg>
+                  </span>
+                  <span>LinkedIn Profile</span>
+                </a>
+              </li>
+              <li class="contact__link-item">
+                <a href="https://github.com/akhterhussain134" target="_blank" rel="noopener noreferrer" class="contact__link" aria-label="Akhter Hussain on GitHub (opens in new tab)">
+                  <span class="contact__link-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                      <path d="M10 2a8 8 0 00-2.53 15.59c.4.07.55-.17.55-.38v-1.32c-2.23.48-2.7-1.07-2.7-1.07-.36-.93-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.71 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.65 7.65 0 0110 6.84c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.19c0 .21.15.46.55.38A8 8 0 0010 2z" fill="none" stroke="currentColor" stroke-width="1.2"/>
+                    </svg>
+                  </span>
+                  <span>GitHub Profile</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact__form-wrapper">
+            <form class="contact__form" action="mailto:akhtarwani666@gmail.com" method="get" enctype="text/plain" aria-label="Contact form">
+              <div class="form__group">
+                <label for="contact-name" class="form__label">Full Name</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  class="form__input"
+                  placeholder="Your full name"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                />
+              </div>
+
+              <div class="form__group">
+                <label for="contact-email" class="form__label">Email Address</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  class="form__input"
+                  placeholder="your@email.com"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                />
+              </div>
+
+              <div class="form__group">
+                <label for="contact-subject" class="form__label">Subject</label>
+                <input
+                  type="text"
+                  id="contact-subject"
+                  name="subject"
+                  class="form__input"
+                  placeholder="What's this about?"
+                />
+              </div>
+
+              <div class="form__group">
+                <label for="contact-message" class="form__label">Message</label>
+                <textarea
+                  id="contact-message"
+                  name="body"
+                  class="form__textarea"
+                  rows="5"
+                  placeholder="Tell me about your project or opportunity..."
+                  required
+                  aria-required="true"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="button button--primary button--full">
+                Send Message
+                <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__container">
+
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo" aria-label="Akhter Hussain – Back to top">
+          <span class="nav__logo-bracket">&lt;</span>AH<span class="nav__logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer__tagline">Passionate frontend developer focused on building responsive and modern web experiences.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <h3 class="footer__nav-title">Quick Links</h3>
+        <ul role="list">
+          <li><a href="#home"       class="footer__link">Home</a></li>
+          <li><a href="#about"      class="footer__link">About</a></li>
+          <li><a href="#skills"     class="footer__link">Skills</a></li>
+          <li><a href="#projects"   class="footer__link">Projects</a></li>
+          <li><a href="#contact"    class="footer__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__social">
+        <h3 class="footer__nav-title">Connect</h3>
+        <ul class="footer__social-list" role="list">
+          <li>
+            <a href="mailto:akhtarwani666@gmail.com" class="footer__social-link" aria-label="Email Akhter Hussain">
+              <svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                <rect x="2" y="4" width="16" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <polyline points="2,4 10,11 18,4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              Email
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/akhter-hussain-324491357" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn (opens in new tab)">
+              <svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                <rect x="2" y="2" width="16" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <line x1="6" y1="9" x2="6" y2="15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="6" y1="6" x2="6" y2="7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M10 9v6M10 12c0-2 5-2 5 0v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              </svg>
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/akhterhussain134" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub (opens in new tab)">
+              <svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                <path d="M10 2a8 8 0 00-2.53 15.59c.4.07.55-.17.55-.38v-1.32c-2.23.48-2.7-1.07-2.7-1.07-.36-.93-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.71 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.65 7.65 0 0110 6.84c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.19c0 .21.15.46.55.38A8 8 0 0010 2z" fill="none" stroke="currentColor" stroke-width="1.2"/>
+              </svg>
+              GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copy">
+          &copy; <span id="footer-year">2025</span> Akhter Hussain. Built with HTML5 &amp; CSS3.
+        </p>
+        <p class="footer__credit">
+          <span class="footer__credit-dot" aria-hidden="true"></span>
+          Frontend Developer Portfolio
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Minimal inline JS for year update and mobile nav toggle ONLY -->
+  <script>
+    /* Year update */
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+    /* Mobile nav toggle */
+    const toggle = document.querySelector('.nav__toggle');
+    const menu   = document.getElementById('nav-menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', function () {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!expanded));
+        menu.classList.toggle('nav__menu--open');
+      });
+      /* Close on link click */
+      menu.querySelectorAll('.nav__link').forEach(function (link) {
+        link.addEventListener('click', function () {
+          toggle.setAttribute('aria-expanded', 'false');
+          menu.classList.remove('nav__menu--open');
+        });
+      });
+    }
+  </script>
+
+</body>
+</html>
